@@ -717,8 +717,10 @@
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .works-grid { grid-template-columns: 1fr; }
-      .work-card:first-child { grid-column: span 1; }
-      .work-card:first-child .work-inner { aspect-ratio: 16/9; }
+      .work-card:first-child,
+      .work-card--wide { grid-column: span 1; }
+      .work-card:first-child .work-inner,
+      .work-card--wide .work-inner { aspect-ratio: 16/9; }
       #contact { padding-top: 88px; padding-bottom: 80px; }
       footer { flex-direction: column; gap: 12px; text-align: center; }
     }
